@@ -60,7 +60,7 @@ export const Products: React.FC = () => {
       }
     };
 
-    window.addEventListener(" ", handlePopState);
+    window.addEventListener("popstate", handlePopState);
     return () => {
       window.removeEventListener("popstate", handlePopState);
     };
